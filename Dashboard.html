@@ -1,1 +1,265 @@
-
+<html>
+    <head>
+    <title>Dashboard</title>
+         <link href="css/project.css" type="text/css" rel=stylesheet />
+    </head>
+    <body id="dashboard">
+        <header>Dashboard</header>
+        <table id="tech" style="display: inline-block; border: 1px solid; float: left; margin-right:50px" border="2">
+        <tr>
+            <th id="header">Tech Company</th>
+            <th id="header">Percent Change for 2020</th>
+            </tr>
+            <tr>
+                <td id="red">AT&T</td>
+                <td id="red">-25.6%</td>
+            </tr>
+            <tr>
+                <td>Verizon</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <td id="green">Microsoft</td>
+                <td id="green">34.8%</td>
+            </tr>
+            <tr>
+                <td id="green">Comcast</td>
+                <td id="green">8.0%</td>
+            </tr>
+            <tr>
+                <td id="green">Dell</td>
+                <td id="green">26.4%</td>
+            </tr>
+            <tr>
+                <td id="red">Raytheon</td>
+                <td id="red">-31.4%</td>
+            </tr>
+            <tr>
+                <td id="red">Intel</td>
+                <td id="red">-25.3%</td>
+            </tr>
+            <tr>
+                <td id="red">Disney</td>
+                <td id="red">-6.6%</td>
+            </tr>
+            <tr>
+                <td id="green">Visa</td>
+                <td id="green">10.1%</td>
+            </tr>
+            <tr>
+                <td id="green">Payapl</td>
+                <td id="green">70.3%</td>
+            </tr>
+            <tr>
+                <td id="green">Netflix</td>
+                <td id="green">46.4%</td>
+            </tr>
+            <tr>
+                <td id="green">Amazon</td>
+                <td id="green">64.9%</td>
+            </tr>
+            <tr>
+                <td id="green">Alphabet A</td>
+                <td id="green">29.5%</td>
+            </tr>
+            <tr>
+                <td id="green">Apple</td>
+                <td id="green">58.8%</td>
+            </tr>
+            <tr>
+                <td id="green">Facebook</td>
+                <td id="green">32.0%</td>
+            </tr>
+            <tr>
+                <td id="green">Average</td>
+                <td id="green">19.5%</td>
+            </tr>
+        </table>
+        <table id="Nontech" style="display:inline-block; border:1px solid;" border="2">
+        <tr>
+            <th id="header">Non-Tech Company</th>
+            <th id="header">Percent Change for 2020</th>
+            </tr>
+            <tr>
+                <td id="green">Nike</td>
+                <td id="green">25.5%</td>
+            </tr>
+            <tr>
+                <td id="green">Walmart</td>
+                <td id="green">26.6%</td>
+            </tr>
+            <tr>
+                <td id="red">Under Armour</td>
+                <td id="red">-31.6%</td>
+            </tr>
+            <tr>
+                <td id="red">Exxon Mobil</td>
+                <td id="red">-34.3%</td>
+            </tr>
+            <tr>
+                <td id="red">CVS</td>
+                <td id="red">-4.3%</td>
+            </tr>
+            <tr>
+                <td id="green">United Health Group</td>
+                <td id="green" >21.6%</td>
+            </tr>
+            <tr>
+                <td id="red">Ford</td>
+                <td id="red">-9.3%</td>
+            </tr>
+            <tr>
+                <td id="green">Mckesson</td>
+                <td id="green">31.9%</td>
+            </tr>
+            <tr>
+                <td id="green">CostCo</td>
+                <td id="green">30.0%</td>
+            </tr>
+            <tr>
+                <td id="red">Chevron</td>
+                <td id="red">-31.6%</td>
+            </tr>
+            <tr>
+                <td id="red">JP Morgan</td>
+                <td id="red">-19.1%</td>
+            </tr>
+            <tr>
+                <td id="red">State Farm</td>
+                <td id="red">-5.4%</td>
+            </tr>
+            <tr>
+                <td id="red">Boeing</td>
+                <td id="red">-43.9%</td>
+            </tr>
+            <tr>
+                <td id="green">UPS</td>
+                <td id="green">40.1%</td>
+            </tr>
+            <tr>
+                <td id="red">Coke</td>
+                <td id="red">-2.8%</td>
+            </tr>
+            <tr>
+                <td id="red">Average</td>
+                <td id="red">-.4%</td>
+            </tr>
+            
+        </table>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/netflix2020.js"></script>
+        <script src="js/apple2020.js"></script>
+        <script src="js/weirdamazon2020.js"></script>
+        <script src="js/netflix2009.js"></script>
+        <script src="js/amazon2009.js"></script>
+        <script src="js/apple2009.js"></script>
+        <script src="js/general.js"></script>
+        <script src="js/amazon2020.js"></script>
+        <p id="click" ></p>
+        <svg id="graph1" width=0 height=0></svg>
+        <svg id="graph2" width=0 height=0></svg>
+        <div id="left"><svg id="graph3" width=400 height=380> <circle cx="150" cy="228" r="5"/>
+            <circle cx="30" cy="243" r="5"/>
+            <circle cx="290" cy="41" r="5"/>
+            <div id="m">06/11/2008</div>
+            <div id="n">06/11/2009</div>
+            <div id="l">08/11/2010</div>
+            <div id="t">Officially Declared A Pandemic</div>
+            <div id="s">Pandemic Officially Ends</div>
+        <div id="rotated">Stock Price in $</div></svg></div>
+        <div id="right"><svg id="graph4" width=400 height=380>
+            <circle id="circle1" cx="30" cy="165" r="5"/>
+            <circle cx="150" cy="135" r="5"/>
+            <circle cx="250" cy="60" r="5"/>
+            <div id="rotate">Netflix 2020 COVID-19 Pandemic</div>
+        <div id="bottom">Months Since September 11, 2019</div>
+            <div id="side">Stock Price in $</div></svg>
+        <div id="clik">9/11/2019</div>
+            <div id="clik2">3/11/2020</div>
+            <div id="clik2b">Officially Declared A Pandemic</div>
+            <div id="clik3">08/03/2020</div>
+        </div>
+        <p id="para">Aside from a slight dip at the end of the graph for the COVID-19 pandemic, it can be easily seen that the stocks increase at a much higher rate compared to how they were increasing before.</p>
+        <span>
+        <table style="display: inline-block; border: 1px solid; float:left; margin-right:100px" border="2">
+            <tr>
+            <th id="header3">Company</th>
+            <th id="header3">Pre-2009 Influenza</th>
+            <th id="header3">During 2009 Influenza</th>
+            </tr>
+           <tr>
+            <td>Facebook</td>
+            <td>DNE</td>
+            <td>DNE</td>   
+            </tr>
+            <tr>
+            <td>Apple</td>
+            <td id="red">-22.6%</td>
+            <td id="green">78.8%</td>   
+            </tr>
+            <tr>
+            <td id="green">Amazon</td>
+            <td id="green">10.9%</td>
+            <td id="green">62.9%</td>   
+            </tr>
+            <tr>
+            <td id="green">Netflix</td>
+            <td id="green">24.8%</td>
+            <td id="green">235.1%</td>   
+            </tr>
+            <tr>
+            <td>Google</td>
+            <td id="red">-21.3%</td>
+            <td id="green">14.6%</td>   
+            </tr>
+            <tr>
+            <td>Average</td>
+            <td id="red">-2.05%</td>
+            <td id="green">97.85%</td>   
+            </tr>
+            </table>
+        </span>
+        <span><table id="flu" style="display: inline-block; float:left; border: 1px solid;" border="2">
+        
+    <tr>
+        <th id="header3">Company</th>
+    <th id="header3">Pre-COVID 19</th>
+        <th id="header3">During COVID 19</th>
+    </tr>
+            <tr>
+                <td>Facebook</td>
+                <td id="red">-9.7%</td>
+                <td id="green">54.1%</td>
+            </tr>
+        <tr>
+                <td id="green">Apple</td>
+                <td id="green">23.2%</td>
+                <td id="green">94.9%</td>
+            </tr>
+            <tr>
+                <td>Amazon</td>
+                <td id="red">-0.1%</td>
+                <td id="green">72.9%</td>
+            </tr>
+            <tr>
+                <td id="green">Netflix</td>
+                <td id="green">21.4%</td>
+                <td id="green">42.5%</td>
+            </tr>
+            <tr>
+                <td >Google</td>
+                <td id="red">-0.7%</td>
+                <td id="green">30.6%</td>
+            </tr>
+            <tr>
+                <td id="green">Average</td>
+                <td id="green">6.8%</td>
+                <td id="green">59%</td>
+            </tr>
+        </table>
+        </span>
+        <p id="clicka">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <a href="argument.html">Argument Link</a>
+        <a href="index.html">Back to Hompage</a>
+    </body>
