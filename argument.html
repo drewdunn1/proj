@@ -1,1 +1,67 @@
-
+<html>
+    <head>
+        <Header id="header2">Visual Argument</Header>
+        <link href="css/project.css" type="text/css" rel=stylesheet></head>
+    <body id="body">
+        <p id="title">Hypothesis</p>
+        <p id="hypothesis">If a pandemic occurs, then the stock prices of Technological companies will rise at a higher rate than usual.</p>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="js/applebyyear.js"></script>
+        <script src="js/general2.js"></script>
+    <svg id="yeargraph1" width="800" height="350">
+        <circle cx="546" cy="100" r="5"/>
+        <circle cx="740" cy="155" r="5"/>
+        <div id="k">2009</div>
+        <div id="j">2020</div><div id="rtate">Percent Increase</div>
+        </svg>
+        <p id="testing"></p>
+        <table id="argumenttable" style="display:inline-block; border:1px solid;" border="2">
+        <tr>
+            <th id="header6">Company</th>
+            <th id="header6">Average Increase per Year</th>
+            <th id="header6">Increase During 2009 Influenza</th>
+            <th id="header6">Increase During COVID-19</th>
+            </tr>
+            <tr>
+            <td id="green">Facebook</td>
+            <td id="green">29.2%</td>
+            <td id="white">DNE</td>
+            <td id="green">54.1%</td>
+            </tr>
+            <tr>
+            <td id="green">Apple</td>
+            <td id="green">33.4%</td>
+            <td id="green">78.8%</td>
+            <td id="green">94.9%</td>
+            </tr>
+            <tr>
+            <td id="green">Amazon</td>
+            <td id="green">79.5%</td>
+            <td id="green">62.9%</td>
+            <td id="green">72.9%</td>
+            </tr>
+            <tr>
+            <td id="green">Netflix</td>
+            <td id="green">66.6%</td>
+            <td id="green">235.1%</td>
+            <td id="green">42.5%</td>
+            </tr>
+            <tr>
+            <td id="green">Google</td>
+            <td id="green">29.1%</td>
+            <td id="green">14.6%</td>
+            <td id="green">30.6%</td>
+            </tr>
+            <tr>
+            <td id="green">Average</td>
+            <td id="green">47.8%</td>
+            <td id="green">97.9%</td>
+            <td id="green">59%</td>
+            </tr>
+        </table>
+        <p id="newclick">As you can see from the table above, the average rate of increase for the companies during times of pandemics is considerably higher than when they are not in times of pandemics. I chose to graph Apple because it was the stock that was the most stable and had the least amount of outliers. The graph shows that although there are some time periods that have greater increases than the two years of pandemics, the increase during those pandemics is considerably higher than the majority of the other years. </p>
+        
+    </body>
+    <a href="Dashboard.html">Back to Dashboard</a>
+    <a href="index.html">Back to Homepage</a>
+</html>
